@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Form validation</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="jquery-2.1.3.js"></script>
+  <script src="jquery.validate.min.js"></script>
+  <script src="custom.js"></script>
+
+
+</head>
+<body>
+
+
+  <h1> Form validations </h1>
+
+  <form class="cmxform" id="commentForm" method="get" action="">
+    <fieldset>
+      <legend>Please provide your name, email address (won't be published) and a comment</legend>
+      <!-- <p>
+        <label for="cname">Name (required, at least 2 characters)</label>
+        <input id="cname" name="name" minlength="2" type="text" required>
+      </p>
+      <p>
+        <label for="cemail">E-Mail (required)</label>
+        <input id="cemail" type="email" name="email" required>
+      </p>
+      <p>
+        <label for="curl">URL (optional)</label>
+        <input id="curl" type="url" name="url">
+      </p>
+      <p>
+        <label for="ccomment">Your comment (required)</label>
+        <textarea id="ccomment" name="comment" required></textarea>
+      </p> -->
+    <p>
+      <label for="zipcode">Zip Code</label>
+      <input id="zipcode" digits="true" minlength="5" type="text" name="zipcode" required>
+    </p>
+      <p>
+        <input class="submit" type="submit" value="Submit">
+      </p>
+    </fieldset>
+  </form>
+</body>
+</html>
